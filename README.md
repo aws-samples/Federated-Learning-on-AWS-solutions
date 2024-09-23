@@ -1,6 +1,13 @@
 # Introduction
 The main purpose of this project is to use AWS CDK to quickly build the required environment for Federated Learning.
 In the Federated Learning architecture, there are Server Side and Client Side environments. For effective and proper connectivity between these environments, their VPC IP ranges (CIDR) must not overlap.
+
+
+We use the Flower framework on Amazon SageMaker because it is framework-agnostic and compatible with machine learning libraries like PyTorch and TensorFlow. 
+The architecture can be summarized as follows:
+* The `Flower Server` run server with `SageMaker Notebook` is located on the right-hand side of the diagram.
+* The `Flower Client` train model with `SageMaker Model Training` is on the left-hand side of the diagram.
+
 ![flower-architecture](/imgs/flower-architecture.png)
 
 Therefore, before proceeding with the implementation, please confirm the following for the account environment you plan to use:
