@@ -11,33 +11,33 @@ Afterwards, we will use AWS CDK to automatically deploy the AWS environment and 
 
 # Installation
 #### Install AWS CLI
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+  https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 #### Install AWS CDK
-https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html
+  https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html
 
 #### Obtain AWS Credentials in the execution environment
-input your AWS account credentials
+  open a terminal and input your AWS account credentials
 
 #### Setting up AWS Account CDK environment
-cdk bootstrap
+  cdk bootstrap
 
 #### Set the environment variable
-source .venv/bin/activate
+  source .venv/bin/activate
 
 #### Install project dependencies
-python3 -m pip install -r requirements.txt
+  python3 -m pip install -r requirements.txt
 
 #### Allocate the VPC CIDR we need. For example, if our CIDR is 192.168.1.0/24, we execute the following commands:
 #### Use cdk synth to generate the CloudFormation template file.
-cdk synth -c "vpccidr=192.168.1.0/24"
+  cdk synth -c "vpccidr=192.168.1.0/24"
 
 #### Use cdk deploy to deploy the project environment.
-cdk deploy -c "vpccidr=192.168.1.0/24"
+  cdk deploy -c "vpccidr=192.168.1.0/24"
 
 #### After Install 
-Then we use VPC Peering or Site-to-Site VPN to connect with the network environment you want to connect, and then you can start using Federated Learning.
-For more information, please refer to the workshop (https://catalog.us-east-1.prod.workshops.aws/workshops/e4bcd38f-db3f-4c56-b63a-9596dbbb2fbc/en-US)
+  Then we use VPC Peering or Site-to-Site VPN to connect with the network environment you want to connect, and then you can start using Federated Learning.
+  For more information, please refer to the workshop (https://catalog.us-east-1.prod.workshops.aws/workshops/e4bcd38f-db3f-4c56-b63a-9596dbbb2fbc/en-US)
 
 ![Architecture on AWS](./imgs/01_aws_architecture.png)
 
