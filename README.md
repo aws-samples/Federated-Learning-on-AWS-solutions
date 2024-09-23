@@ -46,7 +46,5 @@ Afterwards, we will use AWS CDK to automatically deploy the AWS environment and 
   Then we use VPC Peering or Site-to-Site VPN to connect with the network environment you want to connect, and then you can start using Federated Learning.
   For more information, please refer to the workshop (https://catalog.us-east-1.prod.workshops.aws/workshops/e4bcd38f-db3f-4c56-b63a-9596dbbb2fbc/en-US)
 
-![Architecture on AWS](./imgs/01_aws_architecture.png)
-
 ## License
 MIT
