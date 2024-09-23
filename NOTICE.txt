@@ -1,0 +1,5 @@
+# This is a sample for workshop - Flower Federated Learning Workshop
+# https://catalog.us-east-1.prod.workshops.aws/workshops/e4bcd38f-db3f-4c56-b63a-9596dbbb2fbc
+# Before actually using it in a production environment, 
+# please ensure that you understand the functions, effects, and limitations of all components, 
+# and adjust them to a state suitable for your environment.
