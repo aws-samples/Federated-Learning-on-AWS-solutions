@@ -30,7 +30,8 @@ Afterwards, we will use AWS CDK to automatically deploy the AWS environment and 
   `cdk bootstrap`
 
 #### Set the environment variable
-  `source .venv/bin/activate`
+  `python3 -m venv path/to/venv`
+  `source path/to/venv/bin/activate`
 
 #### Install project dependencies
   `python3 -m pip install -r requirements.txt`
